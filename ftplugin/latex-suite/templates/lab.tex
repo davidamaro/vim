@@ -1,0 +1,65 @@
+<+	+>	!comp!	!exe!
+%        File: !comp!expand("%:p:t")!comp!
+%     Created: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+% Last Change: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+%
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{supertabular}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{xcolor, colortbl}
+\usepackage{multirow}
+\usepackage[total={18cm,24cm},top=3cm,left=2cm]{geometry}
+\definecolor{azulito}{rgb}{0.8,0.8,0.8}
+
+\setlength{\parskip}{\baselineskip}
+
+\newenvironment{Figure}
+{\par\medskip\noindent\minipage{\linewidth}}
+{\endminipage\par\medskip}
+
+\newenvironment{Tabla}
+{\par\medskip\noindent\minipage{\linewidth}}{\endminipage\par\medskip}
+\pagestyle{fancy}
+\fancyhead[CL]{David Amaro Alcal\'{a}}
+\fancyhead[CR]{\textit{}<++>} % Nombre actividad
+\fancyhead[C]{<++>} % Número de actividad
+
+\title{Actividad <++>\\
+<++>\\
+}
+\author{Universidad Nacional Autónoma de México \\
+Facultad de Ciencias \\
+Amaro Alcalá David \\
+Equipo 4 \\
+Prof. Alejandro González y Hernández\\
+Ay. Ismael Ponce Rosas\\
+Laboratorio 2\\
+}
+
+\begin{document}
+% \input{tit}
+% \begin{multicols}{2}
+% \input{abs} % Resumen
+% \input{int} % Introducción
+% \input{obj} % Objetivo
+% \input{exp} % Exploración
+% \input{des} % Descripción del experimento
+% \input{hip} % Hipótesis
+% \end{multicols}
+% \input{tab} % Tablas
+% \input{gra} % Gráficas
+% \input{ing} % Interpretación de las gráficas
+% \input{par} % Cálculo de parámetros
+% \input{res} % Resultados
+% \input{anr} % Análisis de los resultados
+% \input{con} % Conclusiones
+% \input{bib} % Bibliografía / Referencias
+\end{document}
